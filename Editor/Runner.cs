@@ -81,7 +81,7 @@
 				test.Pass = false;
 				test.Message = e.Message;
 
-				Debug.LogException(e);
+				Debug.LogError (e.Message);
 			}
 		}
 
@@ -106,7 +106,7 @@
 						e = e.InnerException;
 					}
 
-					Debug.LogException(e);
+					Debug.LogError(e.Message);
 				}
 			}
 
